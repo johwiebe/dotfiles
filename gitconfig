@@ -1,0 +1,5 @@
+[core]
+	excludesfile = /home/johannes/.gitignore
+[user]
+	name = johwiebe
+	email = j.wiebe17@imperial.ac.uk
