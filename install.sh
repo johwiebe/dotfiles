@@ -1,6 +1,8 @@
+# install stow
+sudo apt install stow
+
 # link dotfiles
-ln -sv ~/.dotfiles/zshrc ~/.zshrc
-ln -sv ~/.dotfiles/vimrc ~/.vimrc
-ln -sv ~/.dotfiles/gitconfig ~/.gitconfig
-ln -sv ~/.dotfiles/gitignore ~/.gitignore
-ln -sv ~/.dotfiles/config/i3 ~/.config/i3_test
+stow zsh -v
+stow vim -v
+stow git -v
+stow i3 -v
