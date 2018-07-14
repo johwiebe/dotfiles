@@ -8,14 +8,16 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 source ~/.fonts/*.sh
-POWERLEVEL9K_MODE='awesome-fontconfig'
-# POWERLEVEL9K_MODE='nerdfont-complete'
+# POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_VCS_MERGE_ICON=$'\ue727'
 
 
 # Set list of themes to load
