@@ -6,3 +6,4 @@ stow zsh -v
 stow vim -v
 stow git -v
 stow i3 -v
+stow zathura -v
