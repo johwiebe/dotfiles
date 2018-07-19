@@ -92,6 +92,9 @@ bindsym $mod+a focus parent
 # favorite apps
 bindsym $mod+c exec google-chrome
 
+# screenshot tool
+bindsym Print exec gnome-screenshot -i
+
 # focus the child container
 #bindsym $mod+d focus child
 
