@@ -3,3 +3,5 @@
 [user]
 	name = johwiebe
 	email = j.wiebe17@imperial.ac.uk
+[credential]
+	helper = cache --timeout 7200
