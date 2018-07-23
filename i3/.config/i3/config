@@ -204,7 +204,8 @@ exec --no-startup-id gnome-flashback
 
 # set background image
 exec feh --bg-fill ~/.config/i3/bg.jpg
-exec xcape -t 150
+exec_always xmodmap ~/.Xmodmap
+exec_always xcape -t 100
 exec_always xset fp+ /home/johannes/.fonts
 exec_always xset fp rehash
 
