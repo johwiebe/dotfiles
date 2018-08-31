@@ -66,6 +66,9 @@ au BufRead,BufNewFile *.tex,*.tikz
     \ set expandtab |
     \ set fileformat=unix
 
+" Syntax for GAMS
+au BufNewFile,BufRead *.gms	 setf gams
+
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
