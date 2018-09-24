@@ -107,6 +107,8 @@ source $ZSH/oh-my-zsh.sh
 alias ai="sudo apt install"
 alias p="python"
 alias p3="python3"
+alias vim="vim --servername vim"
+alias prp="pipenv run python"
 
 # vim like
 # bindkey -v
