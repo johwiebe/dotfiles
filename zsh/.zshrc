@@ -109,6 +109,7 @@ alias p="python"
 alias p3="python3"
 alias vim="vim --servername vim"
 alias prp="pipenv run python"
+alias vpn="nmcli con up --ask"
 
 # vim like
 # bindkey -v
