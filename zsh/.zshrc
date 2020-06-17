@@ -2,23 +2,30 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/johannes/.oh-my-zsh"
+  export ZSH="/homes/jw3617/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-source ~/.fonts/*.sh
+# source ~/.fonts/*.sh
 # POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode time)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(anaconda vi_mode time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 
-# POWERLEVEL9K_VCS_MERGE_ICON=$'\ue727'
+# POWERLEVEL9K_SHORTEN_FOLDER_MARKER=(package.json)
+# POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_package_name
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_SHORTEN_STRATEGY=truncated_folders
 
+DEFAULT_USER=jw3617
+
+# POWERLEVEL9K_VCS_MERGE_ICON=$'\ue727'
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -47,7 +54,7 @@ POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -110,6 +117,14 @@ alias p3="python3"
 alias vim="vim --servername vim"
 alias prp="pipenv run python"
 alias vpn="nmcli con up --ask"
+alias nfiles="/vol/linux/bin/nfiles"
+alias usage="/vol/linux/bin/usage"
+alias ll="ls -l"
+alias la="ls -la"
+
+set -o vi
+
+eval "$(direnv hook zsh)"
 
 
 
