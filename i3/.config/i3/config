@@ -31,7 +31,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec lilyterm
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -90,7 +90,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # favorite apps
-bindsym $mod+c exec google-chrome
+# bindsym $mod+c exec brave-browser
+bindsym $mod+c exec brave-browser-beta
 
 # screenshot tool
 bindsym Print exec gnome-screenshot -i
@@ -198,12 +199,15 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gnome-flashback
+# Compton composition
+# exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton.conf -b
+ exec --no-startup-id compton  --respect-prop-shadow --config ~/.config/i3/compton.conf -b
 
 # exec --no-startup-id xautolock -time 5 -locker i3lock &
 # exec xautolock -time 5 -locker i3lock &
 
 # set background image
-exec feh --bg-fill ~/.config/i3/bg.jpg
+# exec feh --bg-fill ~/.config/i3/bg.jpg
 exec_always xmodmap ~/.Xmodmap
 exec_always xcape -t 100
 exec_always xset fp+ /home/johannes/.fonts

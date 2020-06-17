@@ -24,7 +24,7 @@ width = 100%
 height = 15
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
@@ -33,10 +33,10 @@ foreground = ${colors.foreground}
 line-size = 0
 line-color = #f00
 
-border-size = 4
-border-color = #00000000
+border-size = 1
+border-color = #000000
 
-padding-left = 0
+padding-left = 2
 padding-right = 2
 
 module-margin-left = 1
@@ -402,11 +402,14 @@ menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
 menu-1-1-exec = shutdown -r 0
+menu-1-2 = suspend
+menu-1-2-exec = systemctl suspend
 
 menu-2-0 = power off
 menu-2-0-exec = shutdown 0
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
 
 [settings]
 screenchange-reload = true
